@@ -13,5 +13,6 @@ if [ -z "$check" ]; then
   cat /usr/local/src/mod_mruby/src/.libs/mod_mruby.so
 else
   file /usr/local/src/mod_mruby/src/.libs/mod_mruby.so
+  ldd /usr/local/src/mod_mruby/src/.libs/mod_mruby.so
   ls -l /usr/local/src/mod_mruby/src/.libs/mod_mruby.so
 fi

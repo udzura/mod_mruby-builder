@@ -19,5 +19,7 @@ RUN git submodule update
 ADD run-all.sh /usr/local/bin/run-all.sh
 RUN chmod a+x /usr/local/bin/run-all.sh
 
+ONBUILD ADD build_config.rb /usr/local/src/mod_mruby/build_config.rb
+
 ENTRYPOINT ["/usr/local/bin/run-all.sh"]
 CMD ["build"]
