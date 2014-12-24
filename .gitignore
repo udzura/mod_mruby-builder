@@ -36,3 +36,6 @@ build/
 # build results
 
 *.so
+/.vagrant
+
+.install-ok
